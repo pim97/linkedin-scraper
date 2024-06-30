@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "node-capsolver": "^1.0.6",
     "scrappey-wrapper": "^1.0.8"
   }
