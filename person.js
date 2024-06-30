@@ -118,7 +118,6 @@ async function run() {
              */
             const session = await scrappey.createSession({
                 // proxy: PROXY //optional, resi proxy by default provided by Scrappey
-                proxyCountry: 'UnitedStates'
             })
 
             const url = "https://www.linkedin.com/in/jamescaancbe/"
