@@ -96,7 +96,7 @@ function parse(html) {
 async function run() {
     try {
 
-        const loadFromFile = false;
+        const loadFromFile = true;
 
         if (!loadFromFile) {
 
