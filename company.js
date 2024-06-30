@@ -96,7 +96,7 @@ function parse(html) {
 async function run() {
     try {
 
-        const loadFromFile = true;
+        const loadFromFile = false;
 
         if (!loadFromFile) {
 
@@ -117,8 +117,8 @@ async function run() {
             const html = scrape.solution.response
             const innerText = scrape.solution.innerText
 
-            fs.writeFileSync('linkedin.html', html)
-            fs.writeFileSync('linnertext', innerText)
+            fs.writeFileSync('linkedin-company.html', html)
+            fs.writeFileSync('linnertext-company', innerText)
 
             // console.log(JSON.stringify(scrape.solution, undefined, 4))
             const data = parse(html);
@@ -171,7 +171,7 @@ async function run() {
                 "session": session.session
             })
         } else {
-            const html = fs.readFileSync('linkedin.html', 'utf8');
+            const html = fs.readFileSync('linkedin-company.html', 'utf8');
             const data = parse(html);
             console.log(JSON.stringify(data, undefined, 4));
         }
