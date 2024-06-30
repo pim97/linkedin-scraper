@@ -17,6 +17,41 @@ The LinkedIn Profile Scraper is a powerful tool designed to extract detailed inf
    - SCRAPPEY_API_KEY: Your Scrappey API key, available at https://app.scrappey.com/#/ to bypass security measures
    - PROXY: Your optional proxy information
 2. Run the script: `node company.js or person.js`
+   
+## Results
+Get the following results by running `node company.js` or `node person.js`
+
+`return {
+  'title': pageTitle,
+  'first_name': profileFirstName,
+  'last_name': profileLastName,
+  'description': profileDescription,
+  'image_url': profileImageUrl,
+  'profile_url': profileUrl,
+  'name': name,
+  'is_influencer': isInfluencer,
+  'location': location,
+  'follower_count': followerCount,
+  'connection_count': connectionCount,
+  'current_company': currentCompany,
+  'education_details': educationDetails,
+  'personal_website': personalWebsite,
+  'articles': articles,
+  'contributions': contributions,
+  // 'mutual_connections': mutualConnections,
+}`
+
+`return {
+  industry,
+  companySize,
+  headquarters,
+  organizationType,
+  locations,
+  employees,
+  founded,
+  aboutUs,
+  // jobLinks,
+}`
 
 ## Contributing
 
